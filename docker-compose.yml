@@ -43,6 +43,21 @@ services:
     depends_on:
       - backend
 
+  cli:
+    build:
+      context: ./cli
+      dockerfile: Dockerfile
+    container_name: cli-mate-cli
+    environment:
+      - WTF_API_URL=http://backend:8000
+    depends_on:
+      backend:
+        condition: service_healthy
+    profiles:
+      - cli
+    stdin_open: true
+    tty: true
+
 volumes:
   sqlite_data:
     driver: local

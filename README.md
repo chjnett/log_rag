@@ -245,6 +245,12 @@ WTF_API_URL=http://localhost:8000
 - [ ] 성능 최적화
 - [ ] 문서화
 
+## 🛠️ 문제 해결
+
+Docker 서비스 시작 오류나 의존성 충돌 문제가 발생하면:
+- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) - 상세 트러블슈팅 가이드
+- [GETTING_STARTED.md](GETTING_STARTED.md) - 단계별 설정 가이드
+
 ## 🤝 기여하기
 
 기여는 언제나 환영합니다! Pull Request를 자유롭게 제출해 주세요.
